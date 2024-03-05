@@ -1,0 +1,13 @@
+body{
+  background-color: gray;
+}
+
+.form{
+  margin:auto;
+  width:35%;
+  background-color: white;
+}
+
+.input{
+  width:200px;
+}

@@ -1,0 +1,50 @@
+table{
+  width: 820px;
+}
+
+td{
+  vertical-align: top;
+}
+
+body{
+  background-color: gray;
+}
+
+#main-content{
+  margin: auto;
+  width: 60%;
+  background-color: white;
+  padding: 25px;
+  text-align:justify;
+  font-family: Arial;
+}
+
+img{
+  width: 150px;
+  height: 150px;
+}
+
+#name{
+  font-size: 40px;
+  font-family: Arial;
+}
+
+#intro{
+  margin: auto;
+  width: 64%;
+  background-color: #002244;
+  font-family: Arial;
+  padding:20px;
+}
+
+b{
+  color: gray;
+}
+
+h3{
+  color:#383838;
+}
+
+#details{
+  color: white;
+}
