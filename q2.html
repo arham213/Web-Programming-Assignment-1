@@ -1,0 +1,153 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <title>Job Application</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div id="personal-info" class="form">
+      Personal Information
+      <form>
+        <br>
+        <label for="fname">First Name</label><br>
+        <input type="text" id="fname" name="fname" class="input" placeholder="e.g. Muhammad"><br>
+        <span id="fname-error"></span><br>
+        <label for="lname">Last Name</label><br>
+        <input type="text" id="lname" name="lname" class="input" placeholder="e.g. Ahmad"><br>
+        <span id="lname-error"></span><br>
+        <label for="contact-no">Contact No</label><br>
+        <input type="text" id="contact-no" name="contact-no" class="input" placeholder="e.g. +923165432197"><br>
+        <span id="contact-no-error"></span><br>
+        <label for="email">Email</label><br>
+        <input type="text" id="email" name="email" class="input" placeholder="e.g. abc@gmail.com"><br>
+        <span id="email-error"></span><br>
+        <label for="street">Street</label><br>
+        <input type="text" id="street" name="street" class="input"><br><br>
+        <label for="city-code">City Code</label><br>
+        <input type="number" id="city-code" name="city-code" min="0" class="input"><br><br>
+        <label for="zip-code">Zip Code</label><br>
+        <input type="number" id="zip-code" name="zip-code" min="0" class="input"><br><br>
+      </form>
+    </div>
+    <div id="education" class="form">
+      Education
+      <form>
+        <br>
+        <label for="education-level">Highest Level of Education</label><br>
+        <input type="text" id="education-level" name="education-level" placeholder="e.g. Bachelors"><br>
+        <span id="education-level-error"></span><br>
+        <label for="institution">Name of Institution</label><br>
+        <input type="text" id="institution" name="institution" placeholder="e.g. FAST NUCES,Lahore"><br>
+        <span id="institution-error"></span><br>
+        <label for="major">Major</label><br>
+        <input type="text" id="major" name="major" placeholder="e.g. Computer Science"><br>
+        <span id="major-error"></span><br>
+        <label for="graduation-year">Graduation Year</label><br>
+        <input type="number" id="graduation-year" name="graduation-year" min="2000" max="2024" placeholder="e.g.2024" required="true"><br>
+      </form>
+    </div>
+    <div id="previous-jobs" class="form">
+      Previous Jobs
+      <form>
+        <br>
+        <label for="company-names">Company Names</label><br>
+        <input type="text" id="company-names" name="company-names" placeholder="e.g. abc Ltd,xyz Ltd"><br>
+        <span id="company-names-error"></span><br>
+        <label for="employment-dates">Employment Dates</label><br>
+        <input type="text" id="employment-dates" name="employment-dates"placeholder="e.g. Sep 2020-Dec 2021,Aug 2022-Dec2023"><br>
+        <span id="employment-dates-error"></span><br>
+        <label for="job-responsibilities">Job Responsibilities</label><br>
+        <input type="text" id="job-responsibilities" name="job-responsibilities"placeholder="e.g. abc-xyz,abc-xyz "><br>
+        <span id="job-responsibilities-error"></span><br>
+      </form>
+    </div>
+    <div id="skills-and-certifications" class="form">
+      Skills and Certifications
+      <form>
+        <br>
+        <label for="skills">Skills</label><br>
+        <input type="text" id="skills" name="skills" placeholder="e.g. Programming,Business Analytics"><br>
+	      <span id="skills-error"></span><br>
+        <label for="certifications">Certifications</label><br>
+        <input type="text" id="certifications" name="certifications" placeholder="e.g. Cloud Intern,Web intern"><br>
+	      <span id="certifications-error"></span><br>
+      </form>
+    </div>
+    <div id="availability" class="form">
+      Availability
+      <form name="availability_form">
+        <br>
+        <label for="start-date">Start Date</label><br>
+        <input type="date" id="start-date" name="start-date" min="2024-03-03" max="2024-05-03"><br>
+	      <span id="start-date-error"></span><br>
+	      Preferred Work Schedule<br>
+        <select id="preferred-work-schedule">
+          <option value="">None</option>
+          <option value="8-4">08:00 am - 04:00 pm</option>
+          <option value="10-6">10:00 am - 06:00 pm</option>
+          <option value="4-12">04:00 pm - 12:00 pm</option>
+          <option value="6-2">06:00 pm - 02:00 am</option>
+        </select><br>
+        <span id="preferred-work-schedule-error"></span><br>
+	      Are You Willing to Relocate?<br>
+        <input type="radio" id="yes" name="choice">
+        <label for="yes">Yes</label>&nbsp&nbsp&nbsp
+        <input type="radio" id="no" name="choice">
+        <label for="no">No</label><br>
+        <span id="choice-error"></span><br>
+      </form>
+    </div>
+    <div id="references" class="form">
+      References
+      <form>
+        <br>
+        <label for="reference-name">Reference Name</label><br>
+        <input type="text" id="reference-name" name="reference-name" placeholder="e.g. Muhammad, Ahmad"><br>
+        <span id="reference-name-error"></span><br>
+        <label for="reference-email">Reference Email</label><br>
+        <input type="text" id="reference-email" name="reference-email" placeholder="e.g. abc@gmail.com,xyz@gmail.com"><br>
+        <span id="reference-email-error"></span><br>
+        <label for="reference-relationship">Relationship to Reference</label><br>
+        <input type="text" id="reference-relationship" name="reference-relationship" placeholder="e.g. Friend, Relative"><br>
+        <span id="reference-relationship-error"></span><br>
+      </form>
+    </div>
+    <div id="resume" class="form">
+      Resume and Cover Letter
+      <form>
+	<br>
+        <label for="resume">Pick a resume</label><br>
+        <input type="file" id="resume" name="resume"><br>
+        <span id="resume-error"></span><br>
+        <label for="cover-letter">Cover Letter</label><br>
+        <input type="text" id="cover-letter" name="cover-letter" placeholder="Place your cover letter here"><br>
+        <span id="cover-letter-error"></span><br>
+      </form>
+    </div>
+    <div id="additional-questions" class="form">
+      Addittional Questions
+      <form>
+        <br>
+        <label for="additional-question">Why do you want to work for this company?</label>
+        <input type="text" id="additional-question" name="additional-question" placeholder="Write your answer here"><br>
+        <span id="additional-question-error"></span><br>
+      </form>
+    </div>
+    <div id="consent-and-agreement" class="form">
+      Consent and Agreement
+      <form>
+        <br>
+        <input type="checkbox" id="terms-and-conditions" name="terms-and-conditions">
+        <label for="terms-and-conditions">Agree with terms and conditions.<a href="">Click here</a> to view them.</label><br>
+        <span id="terms-and-conditions-error"></span><br>
+        <input type="checkbox" id="privacy-policy" name="privacy-policy">
+        <label for="privacy-policy">Agree with our privacy policy<a href="">Click here</a> to view it.</label><br>
+        <span id="privacy-policy-error"></span><br>
+      </form>
+    </div>
+    <div id="submit-button" class="form">
+      <input type="submit" value="Submit" onClick="validate_input()">
+    </div>
+  </body>
+</html>
