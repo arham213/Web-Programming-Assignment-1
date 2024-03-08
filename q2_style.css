@@ -6,6 +6,15 @@ body{
   margin:auto;
   width:35%;
   background-color: white;
+  
+}
+
+.button{
+  margin:auto;
+  width:35%;
+  background-color: gray;
+  color: green;
+  text-align: center;
 }
 
 .input{
