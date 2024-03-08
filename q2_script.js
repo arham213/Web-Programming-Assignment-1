@@ -27,6 +27,7 @@ function validate_input(){
   var flag8=validate_multiple_text(company_names,"company-names-error");
   var dates=document.getElementById("employment-dates").value;
   var flag9=validate_multiple_dates(dates,"employment-dates-error");
+  var job_responsibilities=document.getElementById("job-responsibilities").value;
   
   //Validate Skills and Certifications
   document.getElementById("skills").innerHTML="";
@@ -67,7 +68,7 @@ function validate_input(){
   flag11&&flag12&&flag13&&flag14&&flag15&&flag16&&flag17&&flag18&&flag18&&flag20){
     alert("Your response has been recorded successfully!");
     var html="";
-    document.write("<html><body><p>Recorded Response of "+fname+lname+"</p><table><tr><td>First Name</td><td>"+fname+"</td></tr><tr><td>Last Name</td><td>"+lname+"</td></tr><tr><td>Contact No</td><td>"+contact_no+"</td></tr><tr><td>Email</td><td>"+email+"</td></tr><tr><td>Street</td><td>"+street+"</td></tr><tr><td>City Code</td><td>"+city_code+"</td></tr><tr><td>Zip Code</td><td>"+zip_code+"</td></tr><tr><td>Highest Level of Education</td><td>"+education_level+"</td></tr><tr><td>Name of Institution</td><td>"+institution+"</td></tr><tr><td>Major</td><td>"+major+"</td></tr><tr><td>Graduation Year</td><td>"+graduation_year+"</td></tr>tr><td>Company Names</td><td>"+company_names+"</td></table></body></html>");
+    document.write("<html><head><style>table{border:1px solid black;align:center}</style></head><body><p>Recorded Response of "+fname+" "+lname+"</p><table><tr><td>First Name</td><td>"+fname+"</td></tr><tr><td>Last Name</td><td>"+lname+"</td></tr><tr><td>Contact No</td><td>"+contact_no+"</td></tr><tr><td>Email</td><td>"+email+"</td></tr><tr><td>Street</td><td>"+street+"</td></tr><tr><td>City Code</td><td>"+city_code+"</td></tr><tr><td>Zip Code</td><td>"+zip_code+"</td></tr><tr><td>Highest Level of Education</td><td>"+education_level+"</td></tr><tr><td>Name of Institution</td><td>"+institution+"</td></tr><tr><td>Major</td><td>"+major+"</td></tr><tr><td>Graduation Year</td><td>"+graduation_year+"</td></tr><tr><td>Company Names</td><td>"+company_names+"</td></tr><tr><td>Employment Dates</td><td>"+dates+"</td></tr><tr><td>Job Responsibilities</td><td>"+job_responsibilities+"</td></tr><tr><td>Skills</td><td>"+skills+"</td></tr><tr><td>Certifications</td><td>"+certifications+"</td></tr></table></body></html>");
     document.close();
   }
   else{
