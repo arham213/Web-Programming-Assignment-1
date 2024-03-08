@@ -11,3 +11,7 @@ body{
 .input{
   width:200px;
 }
+
+span{
+  color:red;
+}
