@@ -9,6 +9,9 @@ function validate_input(){
   var flag3=validate_contact_no(contact_no,"contact-no-error");
   var email = document.getElementById("email").value;
   var flag4=validate_email(email,"email-error");
+  var street=document.getElementById("street").value;
+  var city_code=document.getElementById("city-code").value;
+  var zip_code=document.getElementById("zip-code").value;
   
   //Validate Education
   var education_level = document.getElementById("education-level").value;
@@ -17,6 +20,7 @@ function validate_input(){
   var flag6=validate_text(institution,"institution-error");
   var major = document.getElementById("major").value;
   var flag7=validate_text(major,"major-error");
+  var graduation_year=document.getElementById("graduation-year");
 
   //Validate Previous Jobs
   var company_names = document.getElementById("company-names").value;
@@ -61,9 +65,10 @@ function validate_input(){
   
   if(flag1&&flag2&&flag3&&flag4&&flag5&&flag6&&flag7&&flag8&&flag9&&flag10&&
   flag11&&flag12&&flag13&&flag14&&flag15&&flag16&&flag17&&flag18&&flag18&&flag20){
-    document.write("<html><body><table><tr><td>First Name</td><td>"+fname+"</td></tr><tr><td>Last Name</td><td>"+lname+"</td></tr></table></body></html>");
+    alert("Your response has been recorded successfully!");
+    var html="";
+    document.write("<html><body><p>Recorded Response of "+fname+lname+"</p><table><tr><td>First Name</td><td>"+fname+"</td></tr><tr><td>Last Name</td><td>"+lname+"</td></tr><tr><td>Contact No</td><td>"+contact_no+"</td></tr><tr><td>Email</td><td>"+email+"</td></tr><tr><td>Street</td><td>"+street+"</td></tr><tr><td>City Code</td><td>"+city_code+"</td></tr><tr><td>Zip Code</td><td>"+zip_code+"</td></tr><tr><td>Highest Level of Education</td><td>"+education_level+"</td></tr><tr><td>Name of Institution</td><td>"+institution+"</td></tr><tr><td>Major</td><td>"+major+"</td></tr><tr><td>Graduation Year</td><td>"+graduation_year+"</td></tr>tr><td>Company Names</td><td>"+company_names+"</td></table></body></html>");
     document.close();
-  alert("Your response has been recorded successfully!");
   }
   else{
     alert("There are some issues. Please resolve them");
